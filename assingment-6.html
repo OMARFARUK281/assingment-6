@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assingment 6</title>
+    <script src="https://kit.fontawesome.com/a67e460d96.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class=" container text-center">
+    <h1 class="text-black mt-4 fs-2 text">AI Universe Hub</h1>
+    <button class="bg-danger text-white border border-0 rounded p-2 m-2 fw-bold">Sort By Date</button>
+    </header>
+    <main class="container">
+        <section>
+              <div id="tools-container" class="row row-cols-1 row-cols-md-3 g-4">
+              </div>                                                     
+            <!-- Show All Data -->
+              <div id="show-all" style="height: 120px; width: 150px;" class="text-center container text-center">
+                <button id="btn-show-all"  class="bg-danger text-white border border-0 rounded p-2 m-2 fw-bold mb-2">See More</button>
+              </div>
+
+        </section>
+        <!-- loader -->
+        <section id="loader" class="d-none">
+          <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+
+ <!-- modal contents -->
+        <section>
+          <!-- Modal -->
+          <div class="modal fade" id="toolsDetailModal" tabindex="-1" aria-labelledby="toolsDetailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg fw-bold d-flex row-cols-2-md-2">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="toolsDetailModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="tools-details" class="modal-body"></div>
+
+                <!-- details -->
+                <div>
+                  <div class="">
+
+                    <div class="bg-danger-subtle">
+                      <div>
+                        <p class="text-black fs-6 w-50 px-4">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</p>
+                      </div>
+                      <div class="d-flex justify-content-center gap-4 px-4 text-center">
+                        <div >
+                          <h4 class="bg-white p-4 text-success form-control fw-bold">$10/ <br> month <br> Basic</h4>
+                        </div>
+                        <div>
+                          <h4 class="bg-white p-4 text-warning form-control fw-bold">$50/ <br> month <br> pro</h4>
+                        </div>
+                        <div>
+                          <h4 class="bg-white p-4 text-danger form-control modal-footer fw-bold">Contact <br> us <br> Enterprise</h4>
+                        </div>
+                      </div>
+                        <div class="d-flex gap-4 px-4">
+                          <div>
+                            <h5>Features</h5>
+                            <ul class="text-light-emphasis">                              
+                              <li>Customizable responses</li>
+                              <li>Multilingual support</li>
+                              <li>Seamless integration</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h5>Integrations</h5>
+                            <ul class="text-light-emphasis">
+                              <li>FB Messenger</li>
+                              <li>Slack</li>
+                              <li>Telegram</li>
+                            </ul>
+                          </div>
+                        </div>                                    
+                        
+                    </div>
+                  </div>
+                </div>                               
+                
+                 <div id="tools-container1" class="card w-50">
+                  <img src=" https://img.olhardigital.com.br/wp-content/uploads/2023/01/chatgpt_assistente.jpg" class="card-img-top" alt="...">
+                  <p class="bg-danger w-50 text-center text-white rounded-pill position-absolute top-0 end-0 mt-2">94% accuracy</p>
+                  <div class="card-body">
+                    <h4 class="text-center">Hi, how are you doing today?</h4>
+                    <p class="fs-6 text-center">I'm doing well, thank you for asking. How can I assist you today?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="js/assingment6.js"></script>
+  </body>
+</html>
